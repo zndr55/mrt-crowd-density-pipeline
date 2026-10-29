@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<div><script src='https://whitelist.alteryx.com/v1/downloads/v1/lib/plotly/plotly.min.21.0.18.js'></script></div>
+		<div><script>window.ayxChartQueue = [];</script></div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle; ">
+							<div style="width: 100%; font-family: Arial; font-size: 14.00pt; "><span style="font-family: Arial; font-size: 12.00pt; ">API 1: Real-Time Crowd Density</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="text-align: center; vertical-align: middle; ">
+							<table align="center" width="100%">
+								<tbody>
+									<tr>
+										<td style="vertical-align: middle; ">
+											<div style="text-align: left; width: 100%; font-family: Arial; font-size: 14.00pt; "><span style="font-family: Arial; font-size: 12.00pt; ">Crowd levels between Interchanges and non-interchanges</span></div>
+										</td>
+									</tr>
+									<tr>
+										<td style="vertical-align: middle; ">
+											<div style="width: 100%; ">
+												<div>
+													<div>
+														<table align="center" width="100%" style="border: solid black 1.00pt; ">
+															<thead>
+																<tr style="background-color: #dbdbdb; ">
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Station Type</td>
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Crowd Level</td>
+																	<td style="border-left-color: black; border-left-style: solid; border-left-width: 1.00pt; border-right-color: black; border-right-style: solid; border-right-width: 1.00pt; text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Number of Stations</td>
+																</tr>
+															</thead>
+															<tbody>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">h</td>
+																	<td style="border-left-color: black; border-left-style: solid; border-left-width: 1.00pt; border-right-color: black; border-right-style: solid; border-right-width: 1.00pt; text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">1</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="border-left-color: black; border-left-style: solid; border-left-width: 1.00pt; border-right-color: black; border-right-style: solid; border-right-width: 1.00pt; text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">8</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">m</td>
+																	<td style="border-left-color: black; border-left-style: solid; border-left-width: 1.00pt; border-right-color: black; border-right-style: solid; border-right-width: 1.00pt; text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">1</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																	<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="border-left-color: black; border-left-style: solid; border-left-width: 1.00pt; border-right-color: black; border-right-style: solid; border-right-width: 1.00pt; text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">24</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="text-align: center; vertical-align: middle; ">
+							<table align="center" width="100%">
+								<tbody>
+									<tr>
+										<td style="vertical-align: middle; ">
+											<div style="text-align: left; width: 100%; font-family: Arial; font-size: 14.00pt; "><span style="font-family: Arial; font-size: 12.00pt; ">Per-Station Crowd Levels</span></div>
+										</td>
+									</tr>
+									<tr>
+										<td style="vertical-align: middle; ">
+											<div>
+												<div>
+													<div>
+														<table align="center" style="border: solid black 1.00pt; ">
+															<thead>
+																<tr style="background-color: #dbdbdb; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 10.00pt; ">Station</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 10.00pt; ">Station Name</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 10.00pt; ">Crowd Level</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 10.00pt; ">Station Type</td>
+																</tr>
+															</thead>
+															<tbody>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC1</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Dhoby Ghaut</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC2</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Bras Basah</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC3</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Esplanade</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC4</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Promenade</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC5</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Nicoll Highway</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC6</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Stadium</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">h</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC7</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Mountbatten</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC8</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Dakota</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC9</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Paya Lebar</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC10</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">MacPherson</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC11</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Tai Seng</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC12</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Bartley</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC13</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Serangoon</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC14</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Lorong Chuan</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC15</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Bishan</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC16</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Marymount</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC17</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Caldecott</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC18</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Bukit Brown</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC19</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Botanic Gardens</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC20</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Farrer Road</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC21</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Holland Village</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC22</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Buona Vista</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC23</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">one-north</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC24</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Kent Ridge</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC25</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Haw Par Villa</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC26</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Pasir Panjang</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC27</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Labrador Park</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC28</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Telok Blangah</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC29</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">HarbourFront</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">m</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC30</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Keppel</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC31</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Cantonment</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC32</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Prince Edward Road</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: white; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC33</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Marina Bay</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+																<tr style="background-color: #f0f0f0; ">
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">CC34</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Bayfront</td>
+																	<td style="text-align: left; vertical-align: top; width: 30%; font-family: Arial; font-size: 8.00pt; ">l</td>
+																	<td style="text-align: left; vertical-align: top; width: 35%; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle; ">
+							<div style="width: 100%; font-family: Arial; font-size: 14.00pt; "><span style="font-family: Arial; font-size: 12.00pt; ">API 2: Crowd Forecast</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="text-align: center; vertical-align: middle; ">
+							<div style="width: 100%; ">
+								<div>
+									<div>
+										<table align="center" width="100%" style="border: solid black 1.00pt; ">
+											<thead>
+												<tr style="background-color: #dbdbdb; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Station</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Station Name</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Forecast of Crowd Levels</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Start Time</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Station Type</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC1</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dhoby Ghaut</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC1</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dhoby Ghaut</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC1</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dhoby Ghaut</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC1</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dhoby Ghaut</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">m</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC2</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bras Basah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC2</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bras Basah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC2</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bras Basah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC2</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bras Basah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC3</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Esplanade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC3</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Esplanade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC3</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Esplanade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC3</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Esplanade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC4</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Promenade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC4</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Promenade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC4</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Promenade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC4</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Promenade</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC5</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Nicoll Highway</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC5</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Nicoll Highway</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC5</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Nicoll Highway</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC5</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Nicoll Highway</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC6</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Stadium</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC6</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Stadium</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC6</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Stadium</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC6</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Stadium</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC7</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Mountbatten</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC7</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Mountbatten</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC7</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Mountbatten</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC7</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Mountbatten</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC8</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dakota</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC8</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dakota</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC8</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dakota</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC8</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Dakota</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC9</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Paya Lebar</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC9</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Paya Lebar</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC9</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Paya Lebar</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC9</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Paya Lebar</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC10</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">MacPherson</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC10</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">MacPherson</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC10</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">MacPherson</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC10</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">MacPherson</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC11</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Tai Seng</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC11</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Tai Seng</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC11</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Tai Seng</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC11</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Tai Seng</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC12</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bartley</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC12</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bartley</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC12</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bartley</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC12</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bartley</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC13</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Serangoon</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC13</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Serangoon</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC13</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Serangoon</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC13</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Serangoon</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC14</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Lorong Chuan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC14</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Lorong Chuan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC14</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Lorong Chuan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC14</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Lorong Chuan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC15</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bishan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC15</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bishan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC15</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bishan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC15</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bishan</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC16</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marymount</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC16</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marymount</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC16</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marymount</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC16</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marymount</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC17</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Caldecott</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC17</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Caldecott</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC17</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Caldecott</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC17</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Caldecott</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC18</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bukit Brown</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC18</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bukit Brown</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC18</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bukit Brown</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC18</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bukit Brown</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC19</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Botanic Gardens</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC19</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Botanic Gardens</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC19</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Botanic Gardens</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC19</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Botanic Gardens</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC20</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Farrer Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC20</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Farrer Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC20</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Farrer Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC20</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Farrer Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC21</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Holland Village</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC21</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Holland Village</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC21</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Holland Village</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC21</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Holland Village</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC22</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Buona Vista</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC22</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Buona Vista</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC22</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Buona Vista</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC22</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Buona Vista</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC23</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">one-north</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC23</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">one-north</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC23</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">one-north</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC23</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">one-north</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC24</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Kent Ridge</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC24</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Kent Ridge</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC24</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Kent Ridge</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC24</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Kent Ridge</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC25</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Haw Par Villa</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC25</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Haw Par Villa</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC25</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Haw Par Villa</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC25</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Haw Par Villa</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC26</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Pasir Panjang</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC26</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Pasir Panjang</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC26</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Pasir Panjang</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC26</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Pasir Panjang</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC27</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Labrador Park</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC27</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Labrador Park</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC27</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Labrador Park</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC27</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Labrador Park</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC28</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Telok Blangah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC28</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Telok Blangah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC28</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Telok Blangah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC28</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Telok Blangah</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC29</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">HarbourFront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC29</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">HarbourFront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC29</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">HarbourFront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">m</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC29</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">HarbourFront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">m</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC30</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Keppel</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC30</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Keppel</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC30</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Keppel</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC30</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Keppel</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC31</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Cantonment</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC31</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Cantonment</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC31</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Cantonment</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC31</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Cantonment</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC32</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Prince Edward Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC32</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Prince Edward Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC32</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Prince Edward Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC32</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Prince Edward Road</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC33</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marina Bay</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC33</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marina Bay</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC33</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marina Bay</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC33</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Marina Bay</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC34</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bayfront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC34</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bayfront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC34</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bayfront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:00 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">CC34</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Bayfront</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">l</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">06:30 PM</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Non-Interchange</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle; ">
+							<div style="width: 100%; font-family: Arial; font-size: 14.00pt; "><span style="font-family: Arial; font-size: 12.00pt; ">API 3: Train Service Alerts</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="text-align: center; font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table align="center" width="100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle; ">
+							<div style="width: 100%; ">
+								<div>
+									<div>
+										<table align="center" width="100%" style="border: solid black 1.00pt; ">
+											<thead>
+												<tr style="background-color: #dbdbdb; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">CCL Status</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">Normal Train Service</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="text-align: center; font-family: Arial; font-size: 12.00pt; font-style: normal; font-weight: normal; color: black; ">
+			<table align="center" width="100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle; ">
+							<div style="width: 100%; ">
+								<div>
+									<div>
+										<table align="center" width="100%" style="border: solid black 1.00pt; ">
+											<thead>
+												<tr style="background-color: #dbdbdb; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Message</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 10.00pt; ">Alert Time</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr style="background-color: white; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">23:30-DTL-Planned Service Adjustments. From 10 Jul to 5 Sep 2026, Downtown Line services will end at 11.30pm on Friday nights and commence at 8.30am on Saturday mornings. Please use alternative MRT lines and bus services.</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">2026-07-09 20:00:20</td>
+												</tr>
+												<tr style="background-color: #f0f0f0; ">
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">05:00-SK-Planned Service Adjustment. From 19 Apr to 18 Oct 2026, the Sengkang West LRT Inner Loop (i.e. direction of STC Sengkang towards SW1 Cheng Lim) will be closed. Commuters can continue to use the Sengkang West LRT Outer Loop (i.e. direction of STC Sengkang towards SW8 Renjong), peak-hours shuttle bus services, or regular bus services.</td>
+													<td style="text-align: left; vertical-align: top; font-family: Arial; font-size: 8.00pt; ">2026-04-18 11:50:27</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div><script>var ayxWaitAndRender = function () {if (!window.ayxChartQueue) return; if (window.Plotly) {clearTimeout(window.ayxChartTimer);window.ayxChartQueue.forEach(function(cb){cb();})} else {clearTimeout(window.ayxChartTimer);window.ayxChartTimer = setTimeout(ayxWaitAndRender, 500);}};ayxWaitAndRender();</script></div>
+	</body>
+</html>
+ 

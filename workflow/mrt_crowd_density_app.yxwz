@@ -1,0 +1,3540 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="2490" y="751" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Drop Down (98)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2357" y="124" width="414" height="505" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Combined Dashboard — Section Titles, Union &amp; Final Render</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Combined Dashboard — Section Titles, Union &amp; Final Render</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2382" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+                <Connection>#3</Connection>
+                <Connection>#4</Connection>
+                <Connection>#5</Connection>
+                <Connection>#6</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="2490" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType />
+              <OutputFile>C:\Users\user\OneDrive\Documents\DDP asg\Final_Dashboard.htm</OutputFile>
+              <BatchMode value="False" />
+              <DataField>Layout</DataField>
+              <Separator>Continuous</Separator>
+              <EmbedDependencies value="False" />
+              <ShowHeader value="False" />
+              <ShowFooter value="False" />
+              <PdfCefOutput value="False" />
+              <PortraitMode value="True" />
+              <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>1</PNGResolution>
+              <PNGLargerAction>squeeze</PNGLargerAction>
+              <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="2382" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 API 2: Crowd Forecast\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>API 2: Crowd Forecast</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="2382" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 API 3: Train Service Alerts\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>API 3: Train Service Alerts</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="2382" y="173" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 API 1: Real-Time Crowd Density\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>API 1: Real-Time Crowd Density</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="2478" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Text" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="2478" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Text" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="2478" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Text" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="725" y="353" width="288" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Shared — Station Name Lookup Table</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Shared — Station Name Lookup Table</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="750" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="34" />
+              <Fields>
+                <Field name="Station" />
+                <Field name="StationName" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>CC1</c>
+                  <c>Dhoby Ghaut</c>
+                </r>
+                <r>
+                  <c>CC2</c>
+                  <c>Bras Basah</c>
+                </r>
+                <r>
+                  <c>CC3</c>
+                  <c>Esplanade</c>
+                </r>
+                <r>
+                  <c>CC4</c>
+                  <c>Promenade</c>
+                </r>
+                <r>
+                  <c>CC5</c>
+                  <c>Nicoll Highway</c>
+                </r>
+                <r>
+                  <c>CC6</c>
+                  <c>Stadium</c>
+                </r>
+                <r>
+                  <c>CC7</c>
+                  <c>Mountbatten</c>
+                </r>
+                <r>
+                  <c>CC8</c>
+                  <c>Dakota</c>
+                </r>
+                <r>
+                  <c>CC9</c>
+                  <c>Paya Lebar</c>
+                </r>
+                <r>
+                  <c>CC10</c>
+                  <c>MacPherson</c>
+                </r>
+                <r>
+                  <c>CC11</c>
+                  <c>Tai Seng</c>
+                </r>
+                <r>
+                  <c>CC12</c>
+                  <c>Bartley</c>
+                </r>
+                <r>
+                  <c>CC13</c>
+                  <c>Serangoon</c>
+                </r>
+                <r>
+                  <c>CC14</c>
+                  <c>Lorong Chuan</c>
+                </r>
+                <r>
+                  <c>CC15</c>
+                  <c>Bishan</c>
+                </r>
+                <r>
+                  <c>CC16</c>
+                  <c>Marymount</c>
+                </r>
+                <r>
+                  <c>CC17</c>
+                  <c>Caldecott</c>
+                </r>
+                <r>
+                  <c>CC18</c>
+                  <c>Bukit Brown</c>
+                </r>
+                <r>
+                  <c>CC19</c>
+                  <c>Botanic Gardens</c>
+                </r>
+                <r>
+                  <c>CC20</c>
+                  <c>Farrer Road</c>
+                </r>
+                <r>
+                  <c>CC21</c>
+                  <c>Holland Village</c>
+                </r>
+                <r>
+                  <c>CC22</c>
+                  <c>Buona Vista</c>
+                </r>
+                <r>
+                  <c>CC23</c>
+                  <c>one-north</c>
+                </r>
+                <r>
+                  <c>CC24</c>
+                  <c>Kent Ridge</c>
+                </r>
+                <r>
+                  <c>CC25</c>
+                  <c>Haw Par Villa</c>
+                </r>
+                <r>
+                  <c>CC26</c>
+                  <c>Pasir Panjang</c>
+                </r>
+                <r>
+                  <c>CC27</c>
+                  <c>Labrador Park</c>
+                </r>
+                <r>
+                  <c>CC28</c>
+                  <c>Telok Blangah</c>
+                </r>
+                <r>
+                  <c>CC29</c>
+                  <c>HarbourFront</c>
+                </r>
+                <r>
+                  <c>CC30</c>
+                  <c>Keppel</c>
+                </r>
+                <r>
+                  <c>CC31</c>
+                  <c>Cantonment</c>
+                </r>
+                <r>
+                  <c>CC32</c>
+                  <c>Prince Edward Road</c>
+                </r>
+                <r>
+                  <c>CC33</c>
+                  <c>Marina Bay</c>
+                </r>
+                <r>
+                  <c>CC34</c>
+                  <c>Bayfront</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="292" y="90" width="578" height="237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API 1 — Real-Time: Call &amp; JSON Parsing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>API 1 — Real-Time: Call &amp; JSON Parsing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="426" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="AccountKey" value="YOUR_API_KEY" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <numConnections>1</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <DcmAdvancedAuth value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="510" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="False" />
+              <Mode>SingleField</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="786" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="JSON_Name2" />
+              </GroupFields>
+              <HeaderField field="JSON_Name3" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="594" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Contains([JSON_Name], "value.")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([JSON_Name], "value.")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="690" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="317" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" field="URL" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>URL = "https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="399" y="990" width="1174" height="369" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[	API 3 — Train Service Alerts: Call, Parsing & Reporting]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[	API 3 — Train Service Alerts: Call, Parsing & Reporting]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="424" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" field="URL" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[URL = "https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="497" y="1122" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="AccountKey" value="YOUR_API_KEY" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <numConnections>1</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <DcmAdvancedAuth value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="570" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="False" />
+              <Mode>SingleField</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="630" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Contains([JSON_Name], &quot;Value.&quot;)" field="KeepFlag" size="1" type="Bool" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[KeepFlag = Contains([JSON_Name], "Value.")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="702" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[KeepFlag]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[KeepFlag]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="786" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\user\AppData\Local\Temp\Alteryx\Engine_20128_9c5d813aa9a54524a8f000bf535b0b5b_\Engine_20128_e86a7e28df3c47f5ad3c7d273bbd9601~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="786" y="1063" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" field="CleanPath" size="100" type="String" enabled="true" />
+                <FormulaField expression="IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" field="RecordType" size="20" type="String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CleanPath = REGEX_Replace([JSON_Name], "^value\.", "")
+RecordType = IF [CleanPat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="846" y="1063" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[RecordType] = "Message"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[RecordType] = "Message"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="954" y="1195" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[RecordType]="Status"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[RecordType]="Status"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1038" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_ValueString" selected="True" rename="Status" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Status" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1254" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="StatusText" selected="True" Alignment="Left" Width="" Alias="CCL Status" />
+                <Field name="Status" selected="False" />
+                <Field name="Text" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules>
+                <Rule Name="990ab35f-992e-441c-8c1c-b5cc1d6a3f51">
+                  <RowRule value="True" />
+                  <HighPrecedence value="False" />
+                  <Field />
+                  <Test>Always</Test>
+                  <ApplyTo>Data</ApplyTo>
+                  <SimpleVar />
+                  <SimpleOp>==</SimpleOp>
+                  <SimpleConst>1</SimpleConst>
+                  <Formula>1</Formula>
+                  <Style />
+                  <PrettyName>Row Rule 1</PrettyName>
+                </Rule>
+              </StyleRules>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1122" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Status] = &quot;1&quot; THEN &quot;Normal Train Service&quot; &#xA;ELSEIF [Status] = &quot;2&quot; THEN &quot;Disrupted Train Service&quot;&#xA;ELSE &quot;Unknown&quot; ENDIF" field="StatusText" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StatusText = IF [Status] = "1" THEN "Normal Train Service" 
+ELSEIF [Status] = "2...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Status" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="StatusText" size="1073741823" source="Formula: IF [Status] = &quot;1&quot; THEN &quot;Normal Train Service&quot; &#xA;ELSEIF [Status] = &quot;2&quot; THEN &quot;Disrupted Train Service&quot;&#xA;ELSE &quot;Unknown&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="930" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([CleanPath], &quot;Message\.(\d+)\..*&quot;, &quot;$1&quot;)" field="MsgIndex" size="10" type="String" enabled="true" />
+                <FormulaField expression="REGEX_Replace([CleanPath], &quot;Message\.\d+\.(.*)&quot;, &quot;$1&quot;)" field="MsgField" size="20" type="String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>MsgIndex = REGEX_Replace([CleanPath], "Message\.(\d+)\..*", "$1")
+MsgField = REG...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts&quot;" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="KeepFlag" source="Formula: Contains([JSON_Name], &quot;Value.&quot;)" type="Bool" />
+                <Field name="CleanPath" size="100" source="Formula: REGEX_Replace([JSON_Name], &quot;^value\.&quot;, &quot;&quot;)" type="String" />
+                <Field name="RecordType" size="20" source="Formula: IF [CleanPath] = &quot;Status&quot; THEN &quot;Status&quot;&#xA;ELSEIF Contains([CleanPath], &quot;Message&quot;) THEN &quot;Message&quot;&#xA;ELSE &quot;Other&quot; ENDIF" type="String" />
+                <Field name="MsgIndex" size="10" source="Formula: REGEX_Replace([CleanPath], &quot;Message\.(\d+)\..*&quot;, &quot;$1&quot;)" type="String" />
+                <Field name="MsgField" size="20" source="Formula: REGEX_Replace([CleanPath], &quot;Message\.\d+\.(.*)&quot;, &quot;$1&quot;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1002" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="MsgIndex" />
+              </GroupFields>
+              <HeaderField field="MsgField" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="MsgIndex" size="10" source="CrossTab:Group:First:" type="String" />
+                <Field name="Content" size="1073741823" source="CrossTab:Header:MsgField:Content:First:JSON_Parse" type="V_WString" />
+                <Field name="CreatedDate" size="1073741823" source="CrossTab:Header:MsgField:CreatedDate:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1086" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Content" selected="True" rename="Message" />
+                <SelectField field="CreatedDate" selected="True" rename="AlertTime" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Message" size="1073741823" source="CrossTab:Header:MsgField:Content:First:JSON_Parse" type="V_WString" />
+                <Field name="AlertTime" size="1073741823" source="CrossTab:Header:MsgField:CreatedDate:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1242" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="Message" selected="True" Alignment="Left" />
+                <Field name="AlertTime" selected="True" Alignment="Left" Alias="Alert Time" Width="" />
+                <Field name="Text" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="1170" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 General Network Advisories\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>General Network Advisories</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Message" size="1073741823" source="CrossTab:Header:MsgField:Content:First:JSON_Parse" type="V_WString" />
+                <Field name="AlertTime" size="1073741823" source="CrossTab:Header:MsgField:CreatedDate:First:JSON_Parse" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="1194" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Current Train Service Status\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Current Train Service Status</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Status" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="StatusText" size="1073741823" source="Formula: IF [Status] = &quot;1&quot; THEN &quot;Normal Train Service&quot; &#xA;ELSEIF [Status] = &quot;2&quot; THEN &quot;Disrupted Train Service&quot;&#xA;ELSE &quot;Unknown&quot; ENDIF" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1314" y="1039" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Table" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1314" y="1183" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Table" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1398" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1458" y="1123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Breaking</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Layout" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Section Breaks
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="935" y="581" width="1329" height="277" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[	API 2 — Forecast: Classification, Tables & App Filter]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[	API 2 — Forecast: Classification, Tables & App Filter]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="960" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" field="StationKey" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[StationKey = REGEX_Replace([GroupKey], "\.Interval\.\d+$", "")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GroupKey" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1080" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([Station])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Station])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="GroupKey" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="GroupKey" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1176" y="653" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Station" selected="True" />
+                <SelectField field="StationKey" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1176" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CrowdLevel" selected="True" />
+                <SelectField field="Start" selected="True" />
+                <SelectField field="StationKey" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1260" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="StationKey" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="StationKey" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_StationKey" selected="True" rename="Right_StationKey" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="Right_StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationKey" size="1073741823" source="Formula: REGEX_Replace([GroupKey], &quot;\.Interval\.\d+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1332" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Station" selected="True" />
+                <SelectField field="CrowdLevel" selected="True" rename="ForecastCrowdLevel" />
+                <SelectField field="Start" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1404" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Contains([Start], "T17:") OR Contains([Start], "T18:")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([Start], "T17:") OR Contains([Start], "T18:")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1476" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" field="StationType" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationType = IF [Station] IN ("CC1","CC9","CC10","CC13","CC15","CC17","CC19","C...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="2052" y="654" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="True">
+                <Field name="Station" selected="True" Alignment="Left" />
+                <Field name="Station Name" selected="True" Alignment="Left" Width="" />
+                <Field name="ForecastCrowdLevel" selected="True" Alignment="Left" Alias="Forecast of Crowd Levels" Width="" />
+                <Field name="StartFormatted" selected="True" Alignment="Left" Alias="Start Time" Width="" />
+                <Field name="StationType" selected="True" Alignment="Left" Alias="Station Type" Width="" />
+                <Field name="StationNum" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1668" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" field="StationNum" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" field="StartFormatted" size="30" type="String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationNum = REGEX_Replace([Station], "CC", "")
+StartFormatted = DateTimeFormat(...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="StartFormatted" size="30" source="Formula: DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1764" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="StationNum" order="Ascending" />
+                <Field field="Start" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationNum - Ascending
+Start - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="StartFormatted" size="30" source="Formula: DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="2148" y="654" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Table" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1956" y="654" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Station" selected="True" />
+                <SelectField field="ForecastCrowdLevel" selected="True" />
+                <SelectField field="StationType" selected="True" />
+                <SelectField field="StationName" selected="True" rename="Station Name" />
+                <SelectField field="StationNum" selected="True" />
+                <SelectField field="StartFormatted" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Station Name" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="StartFormatted" size="30" source="Formula: DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1572" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Station" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Station" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Station" selected="True" rename="Right_Station" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1872" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Station]="PLACEHOLDER" OR "PLACEHOLDER"="All Stations"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Station]="PLACEHOLDER" OR "PLACEHOLDER"="All Stations"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="StartFormatted" size="30" source="Formula: DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="ForecastCrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="StartFormatted" size="30" source="Formula: DateTimeFormat(&#xA;  DateTimeParse(&#xA;    REGEX_Replace([Start], &quot;\+\d{2}:\d{2}$&quot;, &quot;&quot;),&#xA;    &quot;%Y-%m-%dT%H:%M:%S&quot;&#xA;  ),&#xA;  &quot;%I:%M %p&quot;&#xA;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1872" y="774" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1325" y="53" width="621" height="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API 1 — Real-Time: Report Tables &amp; App Filter</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>API 1 — Real-Time: Report Tables &amp; App Filter</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1494" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="StationType" selected="True" Alignment="Left" Alias="Station Type" Width="" />
+                <Field name="CrowdLevel" selected="True" Alignment="Left" Alias="Crowd Level" />
+                <Field name="Count" selected="True" Alignment="Left" Alias="Number of Stations" Borders="Both" Width="" Places="0" />
+                <Field name="*Unknown" selected="True" Alignment="Right" Alias="Number of Stations" Width="" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="1566" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Crowd levels between Interchanges and non-interchanges\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Crowd levels between Interchan...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1650" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="True">
+                <Field name="Text" selected="True" Width="" Alignment="Center" />
+                <Field name="Table" selected="True" Width="" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1350" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="StationType" order="Ascending" />
+                <Field field="CrowdLevel" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationType - Ascending
+CrowdLevel - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1734" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width />
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="True">
+                <Field name="Station" selected="True" Alignment="Left" Width="30%" />
+                <Field name="StationName" selected="True" Alignment="Left" Alias="Station Name" Width="35%" />
+                <Field name="CrowdLevel" selected="True" Alignment="Left" Alias="Crowd Level" Width="30%" />
+                <Field name="StationType" selected="True" Alignment="Left" Width="35%" Alias="Station Type" />
+                <Field name="EndTime" selected="False" />
+                <Field name="StartTime" selected="False" />
+                <Field name="Right_Station" selected="False" />
+                <Field name="StationNum" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="1578" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Per-Station Crowd Levels\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Per-Station Crowd Levels</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1650" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="True">
+                <Field name="Text" selected="True" Width="" Alignment="Center" />
+                <Field name="Table" selected="True" Width="" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1746" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1830" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Layout" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1530" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" field="StationNum" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[StationNum = REGEX_Replace([Station], "CC", "")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1638" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="StationNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationNum" size="1073741823" source="Formula: REGEX_Replace([Station], &quot;CC&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1422" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Station]="PLACEHOLDER" OR "PLACEHOLDER"="All Stations"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Station]="PLACEHOLDER" OR "PLACEHOLDER"="All Stations"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1434" y="258" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="893" y="53" width="385" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API 1 — Real-Time: Interchange Classification</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>API 1 — Real-Time: Interchange Classification</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="918" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CrowdLevel" selected="True" />
+                <SelectField field="EndTime" selected="True" />
+                <SelectField field="StartTime" selected="True" />
+                <SelectField field="Station" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="990" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[CrowdLevel] != "NA"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[CrowdLevel] != "NA"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1062" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" field="StationType" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StationType = IF [Station] IN ("CC1","CC9","CC10","CC13","CC15","CC17","CC19","C...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1194" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="StationType" action="GroupBy" rename="StationType" />
+                <SummarizeField field="CrowdLevel" action="GroupBy" rename="CrowdLevel" />
+                <SummarizeField field="Station" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="StationType" size="1073741823" source="Summarize: GroupBy - StationType" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="Summarize: GroupBy - CrowdLevel" type="V_WString" />
+                <Field name="Count" source="Summarize: Count - StationType" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1146" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Station" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Station" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Station" selected="True" rename="Right_Station" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:JSON_Name3:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="EndTime" size="1073741823" source="CrossTab:Header:JSON_Name3:EndTime:First:JSON_Parse" type="V_WString" />
+                <Field name="StartTime" size="1073741823" source="CrossTab:Header:JSON_Name3:StartTime:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:JSON_Name3:Station:First:JSON_Parse" type="V_WString" />
+                <Field name="StationType" size="1073741823" source="Formula: IF [Station] IN (&quot;CC1&quot;,&quot;CC9&quot;,&quot;CC10&quot;,&quot;CC13&quot;,&quot;CC15&quot;,&quot;CC17&quot;,&quot;CC19&quot;,&quot;CC22&quot;,&quot;CC29&quot;)&#xA;THEN &quot;Interchange&quot;&#xA;ELSE &quot;Non-Interchange&quot;&#xA;ENDIF" type="V_WString" />
+                <Field name="Right_Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Station" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="StationName" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="533" width="198" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input and URL Config</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input and URL Config</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="582" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="TrainLineCode" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>CCL</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="299" y="533" width="589" height="249" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API 2 — Forecast: Call &amp; JSON Parsing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>API 2 — Forecast: Call &amp; JSON Parsing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="408" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="AccountKey" value="YOUR_API_KEY" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="TrainLineCode" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <numConnections>1</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <DcmAdvancedAuth value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="492" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="False" />
+              <Mode>SingleField</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="804" y="582" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="GroupKey" />
+              </GroupFields>
+              <HeaderField field="AttributeName" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GroupKey" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="CrowdLevel" size="1073741823" source="CrossTab:Header:AttributeName:CrowdLevel:First:JSON_Parse" type="V_WString" />
+                <Field name="Start" size="1073741823" source="CrossTab:Header:AttributeName:Start:First:JSON_Parse" type="V_WString" />
+                <Field name="Station" size="1073741823" source="CrossTab:Header:AttributeName:Station:First:JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="576" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Contains([JSON_Name], "value.")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([JSON_Name], "value.")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="324" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" field="URL" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>URL = "https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="648" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([JSON_Name], &quot;^.*\.&quot;, &quot;&quot;)" field="AttributeName" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="REGEX_Replace([JSON_Name], &quot;\.[^.]+$&quot;, &quot;&quot;)" field="GroupKey" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AttributeName = REGEX_Replace([JSON_Name], "^.*\.", "")
+GroupKey = REGEX_Replace...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="AttributeName" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;^.*\.&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="GroupKey" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;\.[^.]+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="720" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[AttributeName] != "Date"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[AttributeName] != "Date"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="AttributeName" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;^.*\.&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="GroupKey" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;\.[^.]+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="TrainLineCode" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: &quot;https://datamall2.mytransport.sg/ltaodataservice/PCDForecast?TrainLine=&quot; + [TrainLineCode]" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="AttributeName" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;^.*\.&quot;, &quot;&quot;)" type="V_WString" />
+                <Field name="GroupKey" size="1073741823" source="Formula: REGEX_Replace([JSON_Name], &quot;\.[^.]+$&quot;, &quot;&quot;)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="98" Connection="Question" />
+      <Destination ToolID="101" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="98" Connection="Question" />
+      <Destination ToolID="102" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection name="#6" Wireless="True">
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="96" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="96" Connection="Left" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="95" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="95" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="False" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="False" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="True" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="False" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="46" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="True" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="101" Connection="Action" />
+      <Destination ToolID="100" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Join" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="True" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="102" Connection="Action" />
+      <Destination ToolID="99" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (98)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>asg alteryx app</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9a809f40-c4c5-417f-a3bd-d2ae997b69c1" />
+      <Telemetry>
+        <PreviousWorkflowId value="4292a479-0dcb-4e76-9ddb-11a767d2f176" />
+        <OriginWorkflowId value="0338d591-278c-4ac3-b6e7-dd874671fbfc" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="101" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>PLACEHOLDER</ReplaceText>
+              <Destination>100/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="102" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>PLACEHOLDER</ReplaceText>
+              <Destination>99/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (97)</Name>
+          <ToolId value="97" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Select a CCL Station to View</Description>
+              <Name>Drop Down (98)</Name>
+              <ToolId value="98" />
+              <Multiple value="False" />
+              <Default>All Stations</Default>
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[All Stations
+CC1
+CC2
+CC3
+CC4
+CC5
+CC6
+CC7
+CC8
+CC9
+CC10
+CC11
+CC12
+CC13
+CC14
+CC15
+CC16
+CC17
+CC18
+CC19
+CC20
+CC21
+CC22
+CC23
+CC24
+CC25
+CC26
+CC27
+CC28
+CC29
+CC30
+CC31
+CC32
+CC33
+CC34
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="64" Selected="False" />
+        <Tool ToolId="88" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
